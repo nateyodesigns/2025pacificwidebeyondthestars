@@ -1,0 +1,335 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Pacificwide Real Estate & Mortgage — Feed</title>
+  <style>
+    :root {
+      --primary:#2b66b4;
+      --muted:#f0f2f5;
+      --card:#ffffff;
+      --text:#111;
+      --meta:#6b7280;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial;
+      background: var(--muted);
+      color: var(--text);
+    }
+    .topbar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 40px;
+      background: #2b66b4;
+      border-bottom: 0px solid #1f4b83;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      padding: 0 20px;
+      z-index: 100;
+    }
+    .brand {
+  background-color: #062042; /* white background */
+  color: #fff; /* blue text, Facebook-style */
+  font-weight: 700;
+  padding: 8px 12px;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+    .brand .logo {
+      width: 34px;
+      height: 34px;
+      border-radius: 50%;
+      background: var(--primary);
+      color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 700;
+    }
+    .app {
+      max-width: 1400px;
+      margin: 90px auto 80px;
+      display: grid;
+      grid-template-columns: 300px 1fr;
+      gap: 20px;
+    }
+    .left {
+      display: flex;
+      flex-direction: column;
+    }
+    .left .card {
+      margin-bottom: 20px;
+    }
+    .left .card b { display: block; margin-bottom: 4px; }
+    .card {
+      background: var(--card);
+      border-radius: 10px;
+      border: 1px solid #e6eef7;
+      box-shadow: 0 1px 0 rgba(16,24,40,.03);
+      padding: 14px;
+      margin-bottom: 18px;
+    }
+    .feed .post-head { display: flex; gap: 12px; align-items: center; }
+    .avatar {
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      object-fit: cover;
+      display: block;
+    }
+    .meta .name { font-weight: 600; }
+    .meta .time { font-size: 13px; color: var(--meta); }
+    .video-wrap, .photo-wrap { margin-top: 12px; border-radius: 8px; overflow: hidden; background: #000; }
+    .video-wrap video, .photo-wrap img { display: block; width: 100%; height: auto; }
+    .post-actions { display: flex; gap: 14px; margin-top: 12px; color: var(--meta); font-size: 13px; }
+    .fake-reaction { background: #f1f5f9; padding: 6px 10px; border-radius: 18px; }
+    .comments { margin-top: 16px; font-size: 13px; color: var(--text); line-height: 1.45; }
+    .comment { margin-bottom: 10px; }
+    .comment .u { font-weight: 600; margin-right: 6px; }
+    @media(max-width:1000px) {
+      .app { grid-template-columns: 1fr; max-width: 720px; }
+      .left { display: none; }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="topbar">
+    <div class="brand">
+      <div class="logo">FP</div>
+      <b>FacePage</b>
+    </div>
+  </div>
+
+  <div class="app">
+    <aside class="left">
+      <div class="card">
+        <b>Intro</b>
+        Pacificwide Real Estate & Mortgage specializes in listing and selling residential single family homes, condominiums and multi-unit buildings and commercial buildings, retail center malls, office buildings, churches.
+      </div>
+      <div class="card"><b>Page · Real Estate Service</b></div>
+      <div class="card"><b>PACIFICWIDE BUSINESS GROUP, INC.</b><br>is responsible for this Page</div>
+      <div class="card"><b>Address</b> 3005 Silver Creek Rd, Ste 214, San Jose, CA, United States, California</div>
+      <div class="card"><b>Phone</b> (408) 532-1538</div>
+      <div class="card"><b>Email</b> info@pacificwide.com</div>
+      <div class="card"><b>Website</b> pacificwide.com</div>
+      <div class="card"><b>Status</b> Open now</div>
+      <div class="card"><b>Price Range</b> $</div>
+      <div class="card"><b>Reviews</b> 96% recommend (23 Reviews)</div>
+    </aside>
+
+    <main class="feed">
+
+      <!-- POST 1 (Old Celebration) -->
+      <article class="card">
+        <div class="post-head">
+          <img class="avatar" src="avatar/avatar.png" alt="">
+          <div class="meta">
+            <div class="name">Pacificwide Real Estate & Mortgage</div>
+            <div class="time">June 2023 · Public</div>
+          </div>
+        </div>
+        <div class="video-wrap">
+          <video muted playsinline loop autoplay preload="metadata">
+            <source src="videos/video1.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="post-actions">
+          <div class="fake-reaction">Like</div>
+          <div class="fake-reaction">Comment</div>
+          <div class="fake-reaction">Share</div>
+        </div>
+        <div class="comments">
+          <div class="comment"><span class="u">Kristine Nguyen</span>Can’t believe how far we’ve come since this day!</div>
+          <div class="comment"><span class="u">Leon Le</span>This brings back so many good memories!</div>
+          <div class="comment"><span class="u">Bella Pham</span>What a milestone — feels like yesterday!</div>
+        </div>
+      </article>
+
+      <!-- POST 2 (Old Celebration) -->
+      <article class="card">
+        <div class="post-head">
+          <img class="avatar" src="avatar/avatar.png" alt="">
+          <div class="meta">
+            <div class="name">Pacificwide Real Estate & Mortgage</div>
+            <div class="time">Aug 2024 · Public</div>
+          </div>
+        </div>
+        <div class="video-wrap">
+          <video muted playsinline loop autoplay preload="metadata">
+            <source src="videos/video2.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="post-actions">
+          <div class="fake-reaction">Like</div>
+          <div class="fake-reaction">Comment</div>
+          <div class="fake-reaction">Share</div>
+        </div>
+        <div class="comments">
+          <div class="comment"><span class="u">Emalu Clemons</span>So proud to have been part of this journey!</div>
+          <div class="comment"><span class="u">Tracy Tran</span>Always love seeing these moments — what a team.</div>
+          <div class="comment"><span class="u">Kevin Khoi</span>Feels like such a different time. Miss it!</div>
+        </div>
+      </article>
+
+      <!-- POST 3 (Old Celebration) -->
+      <article class="card">
+        <div class="post-head">
+          <img class="avatar" src="avatar/avatar.png" alt="">
+          <div class="meta">
+            <div class="name">Pacificwide Real Estate & Mortgage</div>
+            <div class="time">Mar 2019 · Public</div>
+          </div>
+        </div>
+        <div class="video-wrap">
+          <video muted playsinline loop autoplay preload="metadata">
+            <source src="videos/video3.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="post-actions">
+          <div class="fake-reaction">Like</div>
+          <div class="fake-reaction">Comment</div>
+          <div class="fake-reaction">Share</div>
+        </div>
+        <div class="comments">
+          <div class="comment"><span class="u">MC</span>What a throwback! Everyone looks so amazing 😄</div>
+          <div class="comment"><span class="u">Vi Nguyen</span>These were some of the best memories with the team!</div>
+          <div class="comment"><span class="u">Anna Ton</span>Love seeing how much we’ve grown since this!</div>
+        </div>
+      </article>
+
+      <!-- POST 5 (Congratulatory) -->
+      <article class="card">
+        <div class="post-head">
+          <img class="avatar" src="avatar/avatar.png" alt="">
+          <div class="meta">
+            <div class="name">Pacificwide Real Estate & Mortgage</div>
+            <div class="time">Feb 2025 · Public</div>
+          </div>
+        </div>
+        <div class="photo-wrap">
+          <img src="photos/photo5.png" alt="Pacificwide event celebration">
+        </div>
+        <div class="post-actions">
+          <div class="fake-reaction">Like</div>
+          <div class="fake-reaction">Comment</div>
+          <div class="fake-reaction">Share</div>
+        </div>
+        <div class="comments">
+          <div class="comment"><span class="u">Tracy Tran</span>Huge congratulations to the whole team! Well deserved!</div>
+          <div class="comment"><span class="u">Kevin Khoi</span>So proud of everyone for this amazing accomplishment!</div>
+          <div class="comment"><span class="u">Vi Nguyen</span>Such an incredible achievement — congrats all around 🎉</div>
+        </div>
+      </article>
+
+      <!-- POST 6 (Old Celebration) -->
+      <article class="card">
+        <div class="post-head">
+          <img class="avatar" src="avatar/avatar.png" alt="">
+          <div class="meta">
+            <div class="name">Pacificwide Real Estate & Mortgage</div>
+            <div class="time">Apr 2024 · Public</div>
+          </div>
+        </div>
+        <div class="photo-wrap">
+          <img src="photos/photo4.png" alt="Pacificwide group memory">
+        </div>
+        <div class="post-actions">
+          <div class="fake-reaction">Like</div>
+          <div class="fake-reaction">Comment</div>
+          <div class="fake-reaction">Share</div>
+        </div>
+        <div class="comments">
+          <div class="comment"><span class="u">MC</span>Congratulations!</div>
+        </div>
+      </article>
+
+      <!-- POST 4 (Old Celebration) -->
+      <article class="card">
+        <div class="post-head">
+          <img class="avatar" src="avatar/avatar.png" alt="">
+          <div class="meta">
+            <div class="name">Pacificwide Real Estate & Mortgage</div>
+            <div class="time">May 2023 · Public</div>
+          </div>
+        </div>
+        <div class="video-wrap">
+          <video muted playsinline loop autoplay preload="metadata">
+            <source src="videos/video4.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="post-actions">
+          <div class="fake-reaction">Like</div>
+          <div class="fake-reaction">Comment</div>
+          <div class="fake-reaction">Share</div>
+        </div>
+        <div class="comments">
+          <div class="comment"><span class="u">Bella Pham</span>I still remember celebrating this moment together!</div>
+          <div class="comment"><span class="u">Leon Le</span>Such a fun and inspiring team — great memories!</div>
+          <div class="comment"><span class="u">Kristine Nguyen</span>Truly a core memory for all of us.</div>
+        </div>
+      </article>
+
+      
+
+      <!-- POST 7 (Upcoming Event) -->
+      <article class="card">
+        <div class="post-head">
+          <img class="avatar" src="avatar/avatar.png" alt="">
+          <div class="meta">
+            <div class="name">Pacificwide Real Estate & Mortgage</div>
+            <div class="time">Sep 2025 · Public</div>
+          </div>
+        </div>
+        <div class="photo-wrap">
+          <img src="photos/photo1.png" alt="Pacificwide event teaser">
+        </div>
+        <div class="post-actions">
+          <div class="fake-reaction">Like</div>
+          <div class="fake-reaction">Comment</div>
+          <div class="fake-reaction">Share</div>
+        </div>
+        <div class="comments">
+          <div class="comment"><span class="u">Leon Le</span>Can’t wait to see everyone there!</div>
+          <div class="comment"><span class="u">Bella Pham</span>So excited for this event — it’s going to be great!</div>
+          <div class="comment"><span class="u">Kristine Nguyen</span>Looking forward to this one!! 🎉</div>
+        </div>
+      </article>
+
+      <!-- POST 8 (Congratulatory) -->
+      <article class="card">
+        <div class="post-head">
+          <img class="avatar" src="avatar/avatar.png" alt="">
+          <div class="meta">
+            <div class="name">Pacificwide Real Estate & Mortgage</div>
+            <div class="time">Jan 2025 · Public</div>
+          </div>
+        </div>
+        <div class="photo-wrap">
+          <img src="photos/photo2.png" alt="Pacificwide award ceremony">
+        </div>
+        <div class="post-actions">
+          <div class="fake-reaction">Like</div>
+          <div class="fake-reaction">Comment</div>
+          <div class="fake-reaction">Share</div>
+        </div>
+        <div class="comments">
+          <div class="comment"><span class="u">Vi Nguyen</span>Happy birthday, Emalu!</div>
+          <div class="comment"><span class="u">Emalu Clemons</span>@vinguyen Thank you so much!</div>
+        </div>
+      </article>
+
+    </main>
+  </div>
+
+</body>
+</html>
